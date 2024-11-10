@@ -121,7 +121,7 @@ PlasmoidItem {
             ListDelegate {
                 id: aboutThisComputerItem
                 highlight: delegateHighlight
-                text: i18n("About This Computer")
+                text: "A propos de cet ordinateur"
                 onClicked: {
                     executable.exec(aboutThisComputerCMD); // cmd exec
                 }
@@ -146,7 +146,7 @@ PlasmoidItem {
                 id: systemPreferencesItem
                 highlight: delegateHighlight
                 width: parent
-                text: i18n("System Preferences...")
+                text: "Paramètres système..."
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
@@ -158,7 +158,7 @@ PlasmoidItem {
             ListDelegate {
                 id: appStoreItem
                 highlight: delegateHighlight
-                text: i18n("App Store...")
+                text: "Store..."
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
                 }
@@ -182,7 +182,7 @@ PlasmoidItem {
             ListDelegate {
                 id: sleepItem
                 highlight: delegateHighlight
-                text: i18n("Sleep")
+                text: "Mettre en veille..."
                 onClicked: {
                     executable.exec(sleepCMD); // cmd exec
                 }
@@ -194,7 +194,7 @@ PlasmoidItem {
             ListDelegate {
                 id: restartItem
                 highlight: delegateHighlight
-                text: i18n("Restart...")
+                text: "Redémarrer..."
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
                 }
@@ -206,7 +206,7 @@ PlasmoidItem {
             ListDelegate {
                 id: shutDownItem
                 highlight: delegateHighlight
-                text: i18n("Shut Down...")
+                text: "Arrêter..."
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
                 }
@@ -230,13 +230,7 @@ PlasmoidItem {
             ListDelegate {
                 id: lockScreenItem
                 highlight: delegateHighlight
-                text: i18n("Lock Screen")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌃⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                text: "Verouiller"
                 onClicked: {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
@@ -248,13 +242,7 @@ PlasmoidItem {
             ListDelegate {
                 id: logOutItem
                 highlight: delegateHighlight
-                text: i18n("Log Out")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⇧⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                text: "Déconnexion"
                 onClicked: {
                     executable.exec(logOutCMD); // cmd exec
                 }

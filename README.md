@@ -2,6 +2,10 @@
 The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar.
 The original maintainer does not seem actively maintaining the project anymore. In order to port the plasmoid to KF6 I created this fork.
 
+## Changes
+
+Almost nothing changes, except some customizations that weren't available on the original repository. The default language is French and shortcuts on the right of somes menus are just removed.
+
 ## Previews
 
 <p align="center">
